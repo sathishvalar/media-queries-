@@ -1,0 +1,230 @@
+*/{
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-image:url(background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+
+}
+.logo{
+    cursor: pointer;
+    height: 100px;
+    width: 140px;
+    margin-left: 50px;
+}
+button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar{
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(90deg,#0c8eae 0%, #000729 80%);
+}
+.menu{
+    height: 25px;
+    margin-top: 40px;
+
+}
+.social,.useful, img{
+    height: 25px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+.social{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50% -50%);
+}
+.useful{
+    margin-top: 20px;
+    position: absolute;
+    bottom: 50px;
+}
+.but:hover{
+    color:red;
+background-color: aqua;}
+
+.conten{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    color: white;
+    font-size: 25px;
+    margin-top: 150px;
+    margin-right: 150px;
+    font-size: 30px;
+
+}
+.bubbles{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.bubbles img{
+    width: 50px;
+    
+    animation: bubble 8s infinite linear ;
+
+}
+@keyframes bubble{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(0);
+
+    }
+    25%
+    {opacity: 1;
+
+    }
+    
+    50%
+    {opacity: 1;
+
+    }
+    75%
+    {
+        opacity: 1;
+
+    }
+    100%
+    {
+       opacity: 0;
+        transform: translateY(-90vh);
+    }
+
+}
+.bubbles img:nth-child(1)
+{
+    width: 60px;
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(2)
+{
+    width: 50px;
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(3)
+{
+    width: 50px;
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4)
+{
+    width: 40px;
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(5)
+{
+    width: 30px;
+    animation-delay: 5.5s;
+}
+.bubbles img:nth-child(6)
+{
+    width: 20px;
+    animation-delay: 6.5s;
+}
+.bubbles img:nth-child(7)
+{
+    width: 30px;
+    animation-delay: 7.5s;
+}
+/*screen size for mobile phone*/
+@media screen and (max-width:600px) 
+{
+    body{
+        background-image:url(https://wallpapercave.com/wp/wp868040.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        
+    
+    }
+    .conten{
+        font-size: 19px;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    .logo{
+        cursor: pointer;
+        height: 100px;
+        width: 150px;
+        margin-left: 30px;
+    }
+    .sidebar{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom:10px;
+        top: auto;
+        background: linear-gradient(90deg,#0c8eae 0%, #000729 80%);
+    }
+    .menu{
+        margin: 10px;
+        margin-left: 20px;
+
+}
+
+.social{
+    margin-left: 140px;
+   top:15px
+}
+.useful{
+    
+    position: absolute;
+    right: 20px;
+    bottom:10px
+}
+.but:hover{
+    color: rgb(83, 136, 242);
+}
+
+}
+
+
+/*tablet*/
+@media screen  and ( max-width:900px) and (min-width:600px)
+{
+    .conten h1{
+        color: whitesmoke;
+        margin-left: 70px;
+        font-size: 70px;
+        margin-top: 300px;
+
+    }
+    .but{
+        width: 300px;
+        font-size: 30px;
+
+    }
+    .but:hover{
+        color: aqua;
+    }
+}
